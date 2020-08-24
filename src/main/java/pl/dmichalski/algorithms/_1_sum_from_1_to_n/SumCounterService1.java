@@ -1,6 +1,6 @@
 package pl.dmichalski.algorithms._1_sum_from_1_to_n;
 
-public class SumCounterService1 {
+class SumCounterService1 {
 
     /**
      * O(n) complexity

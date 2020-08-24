@@ -1,5 +1,9 @@
 package pl.dmichalski.algorithms._1_sum_from_1_to_n;
 
+/**
+ * Write a function which takes n number and returns
+ * sum from 1 to n inclusive.
+ */
 public class Runner {
 
     public static void main(String[] args) {

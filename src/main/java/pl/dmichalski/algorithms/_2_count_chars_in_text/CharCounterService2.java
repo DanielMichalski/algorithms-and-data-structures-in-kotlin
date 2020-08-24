@@ -3,7 +3,7 @@ package pl.dmichalski.algorithms._2_count_chars_in_text;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CharCounterService2 {
+class CharCounterService2 {
 
     /**
      * O(n) complexity

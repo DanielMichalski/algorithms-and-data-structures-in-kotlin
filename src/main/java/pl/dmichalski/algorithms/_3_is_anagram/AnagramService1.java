@@ -2,7 +2,7 @@ package pl.dmichalski.algorithms._3_is_anagram;
 
 import java.util.Arrays;
 
-public class AnagramService1 {
+class AnagramService1 {
 
     /**
      * O(n log n) complexity

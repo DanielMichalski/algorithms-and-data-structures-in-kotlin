@@ -3,7 +3,7 @@ package pl.dmichalski.algorithms._3_is_anagram;
 import java.util.HashMap;
 import java.util.Map;
 
-public class AnagramService2 {
+class AnagramService2 {
 
     /**
      * O(n) complexity

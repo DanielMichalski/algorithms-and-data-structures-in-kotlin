@@ -2,6 +2,10 @@ package pl.dmichalski.algorithms._2_count_chars_in_text;
 
 import java.util.Map;
 
+/**
+ * Write a function which takes in a  string and returns
+ * counts of each character in the string.
+ */
 public class Runner {
 
     public static void main(String[] args) {

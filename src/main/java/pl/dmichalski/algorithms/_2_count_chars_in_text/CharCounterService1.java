@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Pattern;
 
-public class CharCounterService1 {
+class CharCounterService1 {
 
     /**
      * O(n) complexity

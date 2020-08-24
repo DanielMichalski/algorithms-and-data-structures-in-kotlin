@@ -1,6 +1,6 @@
 package pl.dmichalski.algorithms._4_sum_zero;
 
-public class SumToZeroService1 {
+class SumToZeroService1 {
 
     /**
      * O(n2) complexity

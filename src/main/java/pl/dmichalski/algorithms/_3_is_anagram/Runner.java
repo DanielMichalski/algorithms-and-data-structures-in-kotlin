@@ -1,5 +1,11 @@
 package pl.dmichalski.algorithms._3_is_anagram;
 
+/**
+ * Write a function to determine if the second string
+ * is an anagram of the first. An anagram is a word,
+ * phrase, or name formed by rearranging the letters
+ * of another, such as cinema, formed iceman.
+ */
 public class Runner {
 
     public static void main(String[] args) {
