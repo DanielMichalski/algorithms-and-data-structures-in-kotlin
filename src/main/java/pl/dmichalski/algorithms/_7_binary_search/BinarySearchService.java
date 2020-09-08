@@ -5,7 +5,7 @@ class BinarySearchService {
     /**
      * O(log n) complexity
      */
-    public Integer search(int[] sortedValues, int numberToSearch) {
+    Integer search(int[] sortedValues, int numberToSearch) {
         if (sortedValues == null) {
             return -1;
         }

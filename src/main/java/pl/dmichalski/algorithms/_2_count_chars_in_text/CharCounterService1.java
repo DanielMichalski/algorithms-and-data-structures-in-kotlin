@@ -9,7 +9,7 @@ class CharCounterService1 {
     /**
      * O(n) complexity
      */
-    public Map<Character, Integer> charCount(String text) {
+    Map<Character, Integer> charCount(String text) {
         Map<Character, Integer> charactersCounter = new HashMap<>();
 
         String lowerCaseText = text.toLowerCase();

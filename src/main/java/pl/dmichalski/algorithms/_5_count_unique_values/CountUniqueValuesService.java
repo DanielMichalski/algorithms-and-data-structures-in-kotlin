@@ -5,7 +5,7 @@ class CountUniqueValuesService {
     /**
      * O(n) complexity
      */
-    public int countUniqueValues(int[] values) {
+    int countUniqueValues(int[] values) {
         if (values == null || values.length == 0) {
             return 0;
         }

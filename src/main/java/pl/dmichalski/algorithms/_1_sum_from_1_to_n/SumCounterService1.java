@@ -5,7 +5,7 @@ class SumCounterService1 {
     /**
      * O(n) complexity
      */
-    public int countSumFrom1ToN(int n) {
+    int countSumFrom1ToN(int n) {
         int sum = 0;
 
         for (int i = 1; i <= n; i++) {

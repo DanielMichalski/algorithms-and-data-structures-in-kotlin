@@ -5,7 +5,7 @@ class MaxSubarraySumService1 {
     /**
      * O(n2) complexity
      */
-    public Integer maxSubarraySum(int[] values, int numbersCountToCountSum) {
+    Integer maxSubarraySum(int[] values, int numbersCountToCountSum) {
         if (values == null || numbersCountToCountSum > values.length) {
             return null;
         }

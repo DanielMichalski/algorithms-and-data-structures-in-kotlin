@@ -7,7 +7,7 @@ class AnagramService1 {
     /**
      * O(n log n) complexity
      */
-    public boolean areAnagrams(String text1, String text2) {
+    boolean areAnagrams(String text1, String text2) {
         if (text1 == null || text2 == null) {
             return false;
         }

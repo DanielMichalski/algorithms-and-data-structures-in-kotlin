@@ -5,7 +5,7 @@ class SumToZeroService2 {
     /**
      * O(n) complexity
      */
-    public int[] sumZero(int[] values) {
+    int[] sumZero(int[] values) {
         int left = 0;
         int right = values.length - 1;
 
