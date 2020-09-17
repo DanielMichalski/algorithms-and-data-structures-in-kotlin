@@ -3,7 +3,7 @@ package pl.dmichalski.algorithms._8_naive_string_search
 import spock.lang.Specification
 import spock.lang.Unroll
 
-class StringSearchServiceSpec extends Specification {
+class BubbleSortServiceSpec extends Specification {
 
     private StringSearchService underTest = new StringSearchService()
 
