@@ -3,7 +3,7 @@ package pl.dmichalski.algorithms._1_sum_from_1_to_n;
 class SumCounterService1 {
 
     /**
-     * O(n) complexity
+     * O(n) time complexity
      */
     int countSumFrom1ToN(int n) {
         int sum = 0;

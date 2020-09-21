@@ -1,11 +1,11 @@
-package pl.dmichalski.algorithms._9_sorting.bubble
+package pl.dmichalski.algorithms._9_sorting.insertion
 
 import spock.lang.Specification
 import spock.lang.Unroll
 
-class BubbleSortServiceSpec extends Specification {
+class InsertionSortServiceSpec extends Specification {
 
-    private BubbleSortService underTest = new BubbleSortService()
+    private InsertionSortService underTest = new InsertionSortService()
 
     @Unroll
     def 'should return [expectedResult=#expectedResult] for [values=#values]'() {

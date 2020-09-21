@@ -3,7 +3,7 @@ package pl.dmichalski.algorithms._6_max_subarray_sum;
 class MaxSubarraySumService2 {
 
     /**
-     * O(n) complexity
+     * O(n) time complexity
      */
     Integer maxSubarraySum(int[] values, int numbersCountToCountSum) {
         if (values == null || values.length < numbersCountToCountSum) {

@@ -3,7 +3,7 @@ package pl.dmichalski.algorithms._4_sum_zero;
 class SumToZeroService1 {
 
     /**
-     * O(n2) complexity
+     * O(n2) time complexity
      */
     int[] sumZero(int[] values) {
         for (int i = 0; i < values.length; i++) {

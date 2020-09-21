@@ -3,9 +3,9 @@ package pl.dmichalski.algorithms._7_binary_search
 import spock.lang.Specification
 import spock.lang.Unroll
 
-class SearchServiceTest extends Specification {
+class BinarySearchServiceSpec extends Specification {
 
-    private SearchService underTest = new SearchService()
+    private BinarySearchService underTest = new BinarySearchService()
 
     @Unroll
     def 'should return [expectedResult=#expectedResult] for [numbers=#numbers]'() {

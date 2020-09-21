@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 class CharCounterService1 {
 
     /**
-     * O(n) complexity
+     * O(n) time complexity
      */
     Map<Character, Integer> charCount(String text) {
         Map<Character, Integer> charactersCounter = new HashMap<>();

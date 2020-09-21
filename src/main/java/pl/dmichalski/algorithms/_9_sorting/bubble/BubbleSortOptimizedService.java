@@ -1,29 +1,26 @@
 package pl.dmichalski.algorithms._9_sorting.bubble;
 
-import java.util.ArrayList;
-import java.util.List;
-
 class BubbleSortOptimizedService {
 
     /**
-     * O(n2) complexity
+     * O(n2) time complexity
+     * O(1) space complexity
      */
-    List<Integer> sort(List<Integer> values) {
+    int[] sort(int[] values) {
         if (values == null) {
             return null;
         }
 
-        List<Integer> copyOfValues = new ArrayList<>(values);
-        int n = copyOfValues.size();
+        int n = values.length;
 
         for (int i = 0; i < n - 1; i++) {
             boolean noSwaps = true;
             for (int j = 0; j < n - i - 1; j++) {
-                if (copyOfValues.get(j) > copyOfValues.get(j + 1)) {
+                if (values[j] > values[j + 1]) {
                     noSwaps = false;
-                    int tmp = copyOfValues.get(j);
-                    copyOfValues.set(j, copyOfValues.get(j + 1));
-                    copyOfValues.set(j + 1, tmp);
+                    int tmp = values[j];
+                    values[j] = values[j + 1];
+                    values[j + 1] = tmp;
                 }
             }
             if (noSwaps) {
@@ -31,7 +28,7 @@ class BubbleSortOptimizedService {
             }
         }
 
-        return copyOfValues;
+        return values;
     }
 
 }

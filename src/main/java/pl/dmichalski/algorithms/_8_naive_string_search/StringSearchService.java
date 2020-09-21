@@ -3,7 +3,7 @@ package pl.dmichalski.algorithms._8_naive_string_search;
 class StringSearchService {
 
     /**
-     * O(n*k) complexity
+     * O(n*k) time complexity
      */
     int countNumberOfAppearances(String text, String searchingText) {
         if (text == null || searchingText == null) {

@@ -3,7 +3,7 @@ package pl.dmichalski.algorithms._5_count_unique_values
 import spock.lang.Specification
 import spock.lang.Unroll
 
-class CountUniqueValuesServiceTest extends Specification {
+class CountUniqueValuesServiceSpec extends Specification {
 
     private CountUniqueValuesService underTest = new CountUniqueValuesService()
 

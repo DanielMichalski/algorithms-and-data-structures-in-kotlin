@@ -3,7 +3,7 @@ package pl.dmichalski.algorithms._7_binary_search;
 class SearchService {
 
     /**
-     * O(n) complexity
+     * O(n) time complexity
      */
     Integer search(int[] sortedValues, int numberToSearch) {
         if (sortedValues == null) {

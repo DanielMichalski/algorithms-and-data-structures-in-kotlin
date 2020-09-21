@@ -3,7 +3,7 @@ package pl.dmichalski.algorithms._6_max_subarray_sum
 import spock.lang.Specification
 import spock.lang.Unroll
 
-class MaxSubarraySumService2Test extends Specification {
+class MaxSubarraySumService2Spec extends Specification {
 
     private MaxSubarraySumService2 underTest = new MaxSubarraySumService2()
 

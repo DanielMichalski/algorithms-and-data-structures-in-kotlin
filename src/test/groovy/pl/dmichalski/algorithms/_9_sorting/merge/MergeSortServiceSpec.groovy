@@ -1,19 +1,19 @@
-package pl.dmichalski.algorithms._9_sorting.bubble
+package pl.dmichalski.algorithms._9_sorting.merge
 
 import spock.lang.Specification
 import spock.lang.Unroll
 
-class BubbleSortOptimizedServiceTest extends Specification {
+class MergeSortServiceSpec extends Specification {
 
-    private BubbleSortOptimizedService underTest = new BubbleSortOptimizedService()
+    private MergeSortService underTest = new MergeSortService()
 
     @Unroll
     def 'should return [expectedResult=#expectedResult] for [values=#values]'() {
         when:
-        def result = underTest.sort(values)
+        def result = underTest.sort(values as int[])
 
         then:
-        result == expectedResult
+        result == expectedResult as int[]
 
         where:
         values                                 | expectedResult

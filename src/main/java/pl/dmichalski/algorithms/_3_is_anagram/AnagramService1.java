@@ -5,7 +5,7 @@ import java.util.Arrays;
 class AnagramService1 {
 
     /**
-     * O(n log n) complexity
+     * O(n log n) time complexity
      */
     boolean areAnagrams(String text1, String text2) {
         if (text1 == null || text2 == null) {

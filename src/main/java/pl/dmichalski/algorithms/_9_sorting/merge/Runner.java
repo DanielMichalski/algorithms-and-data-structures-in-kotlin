@@ -1,4 +1,4 @@
-package pl.dmichalski.algorithms._9_sorting.bubble;
+package pl.dmichalski.algorithms._9_sorting.merge;
 
 import java.util.Arrays;
 
@@ -9,9 +9,9 @@ import java.util.Arrays;
 public class Runner {
 
     public static void main(String[] args) {
-        int[] values = {3, 2, 5, 1, 4};
+        int[] values = {3, 2, 5, 1, 4, 2, 22, -2};
 
-        BubbleSortService sortService = new BubbleSortService();
+        MergeSortService sortService = new MergeSortService();
         int[] result = sortService.sort(values);
         System.out.println("result = " + Arrays.toString(result));
     }

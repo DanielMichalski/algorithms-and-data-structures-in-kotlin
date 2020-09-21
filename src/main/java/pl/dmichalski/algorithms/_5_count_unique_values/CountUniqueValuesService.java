@@ -3,7 +3,7 @@ package pl.dmichalski.algorithms._5_count_unique_values;
 class CountUniqueValuesService {
 
     /**
-     * O(n) complexity
+     * O(n) time complexity
      */
     int countUniqueValues(int[] values) {
         if (values == null || values.length == 0) {

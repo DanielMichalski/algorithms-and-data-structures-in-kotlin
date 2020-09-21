@@ -6,7 +6,7 @@ import java.util.Map;
 class CharCounterService2 {
 
     /**
-     * O(n) complexity
+     * O(n) time complexity
      */
     Map<Character, Integer> charCount(String text) {
         Map<Character, Integer> charactersCounter = new HashMap<>();

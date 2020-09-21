@@ -6,7 +6,7 @@ import java.util.Map;
 class AnagramService2 {
 
     /**
-     * O(n) complexity
+     * O(n) time complexity
      */
     boolean areAnagrams(String text1, String text2) {
         if (text1 == null || text2 == null) {

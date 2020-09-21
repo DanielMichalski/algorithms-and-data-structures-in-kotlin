@@ -3,9 +3,9 @@ package pl.dmichalski.algorithms._9_sorting.bubble
 import spock.lang.Specification
 import spock.lang.Unroll
 
-class BubbleSortServiceSpec extends Specification {
+class BubbleSortOptimizedServiceSpec extends Specification {
 
-    private BubbleSortService underTest = new BubbleSortService()
+    private BubbleSortOptimizedService underTest = new BubbleSortOptimizedService()
 
     @Unroll
     def 'should return [expectedResult=#expectedResult] for [values=#values]'() {

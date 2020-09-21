@@ -10,10 +10,10 @@ class SelectionSortServiceSpec extends Specification {
     @Unroll
     def 'should return [expectedResult=#expectedResult] for [values=#values]'() {
         when:
-        def result = underTest.sort(values)
+        def result = underTest.sort(values as int[])
 
         then:
-        result == expectedResult
+        result == expectedResult as int[]
 
         where:
         values                                 | expectedResult
@@ -25,6 +25,5 @@ class SelectionSortServiceSpec extends Specification {
         [1, 2, 10, 12, 4, 5, 1]                | [1, 1, 2, 4, 5, 10, 12]
         [2, 3, 4, 5, 8, 12, 25, 150, 1000, 50] | [2, 3, 4, 5, 8, 12, 25, 50, 150, 1000]
     }
-
 
 }
