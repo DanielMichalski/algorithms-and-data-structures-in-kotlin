@@ -1,27 +1,24 @@
-package pl.dmichalski.algorithms._9_sorting.insertion;
+package pl.dmichalski.algorithms._9_sorting.insertion
 
-class InsertionSortService {
-
+internal class InsertionSortService {
     /**
      * O(n2) time complexity
      * O(1) space complexity
      */
-    int[] sort(int[] values) {
+    fun sort(values: IntArray?): IntArray? {
         if (values == null) {
-            return null;
+            return null
         }
-
-        for (int i = 1; i < values.length; i++) {
-            int currentVal = values[i];
-            int j;
-            for (j = i - 1; j >= 0 && values[j] > currentVal; j--) {
-                values[j + 1] = values[j];
+        for (i in 1 until values.size) {
+            val currentVal = values[i]
+            var j: Int
+            j = i - 1
+            while (j >= 0 && values[j] > currentVal) {
+                values[j + 1] = values[j]
+                j--
             }
-            values[j + 1] = currentVal;
+            values[j + 1] = currentVal
         }
-
-        return values;
+        return values
     }
-
 }
-
