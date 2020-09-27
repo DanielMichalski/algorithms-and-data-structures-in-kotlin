@@ -3,6 +3,7 @@ package pl.dmichalski.algorithms._9_sorting.merge
 import java.util.Arrays.copyOfRange
 
 internal class MergeSortService {
+
     /**
      * O(n log n) time complexity
      * O(n) space complexity
@@ -18,8 +19,6 @@ internal class MergeSortService {
         val left = sort(copyOfRange(values, 0, midPoint))
         val right = sort(copyOfRange(values, midPoint, values.size))
         return merge(left, right)
-
-
     }
 
     private fun merge(array1: IntArray?, array2: IntArray?): IntArray {
@@ -49,4 +48,5 @@ internal class MergeSortService {
 
         return result
     }
+
 }

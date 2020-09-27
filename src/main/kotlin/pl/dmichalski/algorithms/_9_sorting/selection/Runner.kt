@@ -14,6 +14,6 @@ object Runner {
         val result = sortService.sort(values)
 
         println("result = $result")
-
     }
+
 }

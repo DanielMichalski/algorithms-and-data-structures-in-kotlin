@@ -1,6 +1,7 @@
 package pl.dmichalski.algorithms._3_is_anagram
 
 internal class AnagramService2 {
+
     /**
      * O(n) complexity
      */

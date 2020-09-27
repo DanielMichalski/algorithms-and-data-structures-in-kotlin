@@ -1,6 +1,7 @@
 package pl.dmichalski.algorithms._9_sorting.insertion
 
 internal class InsertionSortService {
+
     /**
      * O(n2) time complexity
      * O(1) space complexity
@@ -20,4 +21,5 @@ internal class InsertionSortService {
         }
         return values
     }
+
 }

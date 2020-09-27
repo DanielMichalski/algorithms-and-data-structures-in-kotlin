@@ -1,6 +1,7 @@
 package pl.dmichalski.algorithms._2_count_chars_in_text
 
 internal class CharCounterService2 {
+
     /**
      * O(n) complexity
      */

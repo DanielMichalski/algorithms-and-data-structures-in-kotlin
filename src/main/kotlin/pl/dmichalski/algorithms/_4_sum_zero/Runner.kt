@@ -21,4 +21,5 @@ object Runner {
         println("result1 = " + result1.contentToString())
         println("result2 = " + result2.contentToString())
     }
+
 }

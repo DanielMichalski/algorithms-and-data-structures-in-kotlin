@@ -18,7 +18,6 @@ object Runner {
 
         println("result1 = $result1")
         println("result2 = $result2")
-
     }
 
 }
