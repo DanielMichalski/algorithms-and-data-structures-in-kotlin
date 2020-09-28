@@ -7,11 +7,7 @@ This project is written in Kotlin and tests in Groovy and aims to present soluti
 
 ## Table of Contents
 * [Building the application](#building-the-application)
-    * [On Windows](#on-windows)
-    * [On MacOS/ Linux](#on-macos-linux)
 * [Running tests](#running-tests)
-    * [On Windows](#on-windows)
-    * [On MacOS/ Linux](#on-macos-linux)
 
 ## Building the application
 #### On Windows
