@@ -3,7 +3,7 @@ package pl.dmichalski.algorithms._4_sum_zero
 internal class SumToZeroService1 {
 
     /**
-     * O(n2) complexity
+     * O(n2) time complexity
      */
     fun sumZero(values: IntArray): IntArray? {
         for (i in values.indices) {

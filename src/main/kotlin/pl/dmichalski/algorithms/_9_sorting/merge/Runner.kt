@@ -14,7 +14,8 @@ object Runner {
 
         val result = sortService.sort(values)
 
-        println("result = ${result.contentToString()}")
+        println("Before sorting: ${values.contentToString()}")
+        println("After sorting with merge sort: ${result.contentToString()}")
     }
 
 }

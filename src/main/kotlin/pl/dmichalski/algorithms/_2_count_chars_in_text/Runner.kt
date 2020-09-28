@@ -8,7 +8,7 @@ object Runner {
 
     @JvmStatic
     fun main(args: Array<String>) {
-        val text = "Example! "
+        val text = "Example!"
 
         val charCounterService1 = CharCounterService1()
         val charCounterService2 = CharCounterService2()
@@ -16,6 +16,7 @@ object Runner {
         val result1 = charCounterService1.charCount(text)
         val result2 = charCounterService2.charCount(text)
 
+        println("Text '$text' contains characters:")
         println("result1 = $result1")
         println("result2 = $result2")
     }

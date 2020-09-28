@@ -3,7 +3,7 @@ package pl.dmichalski.algorithms._6_max_subarray_sum
 internal class MaxSubarraySumService1 {
 
     /**
-     * O(n2) complexity
+     * O(n2) time complexity
      */
     fun maxSubarraySum(values: IntArray?, numbersCountToCountSum: Int): Int? {
         if (values == null || numbersCountToCountSum > values.size) {

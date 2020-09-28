@@ -3,7 +3,7 @@ package pl.dmichalski.algorithms._9_sorting.selection
 class SelectionSortService {
 
     /**
-     * O(n2) complexity
+     * O(n2) time complexity
      */
     fun sort(values: IntArray?): IntArray? {
         if (values == null) {

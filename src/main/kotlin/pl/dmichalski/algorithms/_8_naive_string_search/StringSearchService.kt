@@ -3,7 +3,7 @@ package pl.dmichalski.algorithms._8_naive_string_search
 internal class StringSearchService {
 
     /**
-     * O(n*k) complexity
+     * O(n*k) time complexity
      */
     fun countNumberOfAppearances(text: String?, searchingText: String?): Int {
         if (text == null || searchingText == null) {

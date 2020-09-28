@@ -18,6 +18,7 @@ object Runner {
         val result1 = sumToZeroService1.sumZero(values)
         val result2 = sumToZeroService2.sumZero(values)
 
+        println("The first pair with sum = 0 from an array: ${values.contentToString()}:")
         println("result1 = " + result1.contentToString())
         println("result2 = " + result2.contentToString())
     }

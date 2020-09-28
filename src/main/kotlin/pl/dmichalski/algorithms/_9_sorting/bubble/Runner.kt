@@ -11,9 +11,13 @@ object Runner {
         val values = intArrayOf(3, 2, 5, 1, 4)
 
         val sortService = BubbleSortService()
+        val sortOptimizedService = BubbleSortOptimizedService()
 
-        val result = sortService.sort(values)
+        val result1 = sortService.sort(values)
+        val result2 = sortOptimizedService.sort(values)
 
-        println("result = ${result.contentToString()}")
+        println("Before sorting: ${values.contentToString()}")
+        println("After sorting with bubble sort: ${result1.contentToString()}")
+        println("After sorting with optimized bubble sort: ${result2.contentToString()}")
     }
 }

@@ -10,7 +10,6 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<junit.version>4.12</junit.version>
 		<spock-core.version>1.1-groovy-2.4</spock-core.version>
 		<groovy-all.version>2.4.11</groovy-all.version>
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
@@ -21,12 +20,6 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>${junit.version}</version>
-			<scope>test</scope>
-		</dependency>
 		<dependency>
 			<groupId>org.spockframework</groupId>
 			<artifactId>spock-core</artifactId>

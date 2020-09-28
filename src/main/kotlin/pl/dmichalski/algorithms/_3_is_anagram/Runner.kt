@@ -19,6 +19,7 @@ object Runner {
         val result1 = anagramService1.areAnagrams(text1, text2)
         val result2 = anagramService2.areAnagrams(text1, text2)
 
+        println("Texts '$text1' and '$text2' are anagram:")
         println("result1 = $result1")
         println("result2 = $result2")
     }

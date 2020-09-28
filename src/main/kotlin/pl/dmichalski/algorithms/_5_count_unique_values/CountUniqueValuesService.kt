@@ -3,7 +3,7 @@ package pl.dmichalski.algorithms._5_count_unique_values
 internal class CountUniqueValuesService {
 
     /**
-     * O(n) complexity
+     * O(n) time complexity
      */
     fun countUniqueValues(values: IntArray?): Int {
         if (values == null || values.isEmpty()) {

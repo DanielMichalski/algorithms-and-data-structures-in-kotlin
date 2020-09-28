@@ -9,11 +9,13 @@ object Runner {
     @JvmStatic
     fun main(args: Array<String>) {
         val values = intArrayOf(3, 2, 5, 1, 4)
+
         val sortService = SelectionSortService()
 
         val result = sortService.sort(values)
 
-        println("result = $result")
+        println("Before sorting: ${values.contentToString()}")
+        println("After sorting with selection sort: ${result.contentToString()}")
     }
 
 }

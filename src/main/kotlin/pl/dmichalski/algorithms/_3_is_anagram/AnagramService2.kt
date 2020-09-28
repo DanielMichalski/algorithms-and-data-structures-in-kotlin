@@ -3,7 +3,7 @@ package pl.dmichalski.algorithms._3_is_anagram
 internal class AnagramService2 {
 
     /**
-     * O(n) complexity
+     * O(n) time complexity
      */
     fun areAnagrams(text1: String?, text2: String?): Boolean {
         if (text1 == null || text2 == null) {

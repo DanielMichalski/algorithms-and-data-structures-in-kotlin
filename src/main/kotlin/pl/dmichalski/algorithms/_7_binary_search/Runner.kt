@@ -19,6 +19,7 @@ object Runner {
         val result1 = searchService.search(sortedValues, numberToSearch)
         val result2 = binarySearchService.search(sortedValues, numberToSearch)
 
+        println("Number $numberToSearch from the array ${sortedValues.contentToString()} is located at the index:")
         println("result1 = $result1")
         println("result2 = $result2")
     }

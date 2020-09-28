@@ -13,10 +13,11 @@ object Runner {
         val sumCounterService1 = SumCounterService1()
         val sumCounterService12 = SumCounterService2()
 
-        val sum1 = sumCounterService1.countSumFrom1ToN(n)
-        val sum2 = sumCounterService12.countSumFrom1ToN(n)
+        val result1 = sumCounterService1.countSumFrom1ToN(n)
+        val result2 = sumCounterService12.countSumFrom1ToN(n)
 
-        println("sum1 = $sum1")
-        println("sum2 = $sum2")
+        println("Sum from 1 to $n inclusive equals:")
+        println("result1 = $result1")
+        println("result2 = $result2 ")
     }
 }

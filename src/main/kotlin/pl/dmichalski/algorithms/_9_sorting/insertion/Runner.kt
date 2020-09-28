@@ -8,14 +8,14 @@ object Runner {
 
     @JvmStatic
     fun main(args: Array<String>) {
-
         val values = intArrayOf(3, 2, 5, 1, 4)
 
         val sortService = InsertionSortService()
 
         val result = sortService.sort(values)
 
-        println("result = ${result.contentToString()}")
+        println("Before sorting: ${values.contentToString()}")
+        println("After sorting with insertion sort: ${result.contentToString()}")
     }
 
 }

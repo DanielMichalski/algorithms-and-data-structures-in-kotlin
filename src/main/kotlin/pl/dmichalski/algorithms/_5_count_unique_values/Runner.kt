@@ -14,9 +14,9 @@ object Runner {
 
         val countUniqueValuesService = CountUniqueValuesService()
 
-        val result1 = countUniqueValuesService.countUniqueValues(values)
+        val result = countUniqueValuesService.countUniqueValues(values)
 
-        println("result1 = $result1")
+        println("There are $result unique values in the array ${values.contentToString()}.")
     }
 
 }

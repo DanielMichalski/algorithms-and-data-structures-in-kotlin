@@ -15,7 +15,7 @@ object Runner {
 
         val result = searchService.countNumberOfAppearances(text, searchingText)
 
-        println("result = $result")
+        println("Text '$text' contains text '$searchingText' $result times.")
     }
 
 }
