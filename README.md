@@ -13,7 +13,6 @@ This project is written in Kotlin and tests in Groovy and aims to present soluti
     * [On Windows](#on-windows)
     * [On MacOS/ Linux](#on-macos-linux)
 
-
 ## Building the application
 #### On Windows
 ```bash
