@@ -5,6 +5,15 @@ Algorithms and data structure
 
 This project is written in Kotlin and tests in Groovy and aims to present solutions with time and memory complexity for some famous algorithms.
 
+## Table of Contents
+* [Building the application](#building-the-application)
+    * [On Windows](#on-windows)
+    * [On MacOS/ Linux](#on-macos-linux)
+* [Running tests](#running-tests)
+    * [On Windows](#on-windows)
+    * [On MacOS/ Linux](#on-macos-linux)
+
+
 ## Building the application
 #### On Windows
 ```bash
@@ -16,4 +25,17 @@ mvnw.cmd clean install
 ```bash
 ## Build application from base directory using Maven Wrapper
 ./mvnw clean install
+```
+
+## Running tests
+#### On Windows
+```bash
+## Run Spock tests using Maven Wrapper
+mvnw.cmd surefire:test
+```
+
+#### On MacOS/ Linux
+```bash
+## Run Spock tests using Maven Wrapper
+./mvnw surefire:test
 ```
