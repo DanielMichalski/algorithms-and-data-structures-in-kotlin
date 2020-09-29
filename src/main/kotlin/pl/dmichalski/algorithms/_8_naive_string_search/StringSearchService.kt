@@ -5,11 +5,7 @@ internal class StringSearchService {
     /**
      * O(n*k) time complexity
      */
-    fun countNumberOfAppearances(text: String?, searchingText: String?): Int {
-        if (text == null || searchingText == null) {
-            return -1
-        }
-
+    fun countNumberOfAppearances(text: String, searchingText: String): Int {
         var count = 0
         for (i in 0 until text.length - searchingText.length + 1) {
             for (j in searchingText.indices) {

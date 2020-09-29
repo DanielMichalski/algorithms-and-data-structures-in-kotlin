@@ -5,11 +5,7 @@ internal class BinarySearchService {
     /**
      * O(log n) time complexity
      */
-    fun search(sortedValues: IntArray?, numberToSearch: Int): Int {
-        if (sortedValues == null) {
-            return -1
-        }
-
+    fun search(sortedValues: IntArray, numberToSearch: Int): Int {
         var min = 0
         var max = sortedValues.size - 1
         while (min <= max) {

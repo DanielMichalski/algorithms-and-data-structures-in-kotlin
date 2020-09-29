@@ -17,9 +17,7 @@ class AnagramService2Spec extends Specification {
 
         where:
         text1        | text2        | expectedResult
-        null         | null         | false
-        null         | "some"       | false
-        "text"       | null         | false
+        ""           | ""           | false
         ""           | "anagram"    | false
         "anagram"    | ""           | false
         "a"          | "b"          | false

@@ -7,8 +7,8 @@ internal class MaxSubarraySumService2 {
     /**
      * O(n) time complexity
      */
-    fun maxSubarraySum(values: IntArray?, numbersCountToCountSum: Int): Int? {
-        if (values == null || values.size < numbersCountToCountSum) {
+    fun maxSubarraySum(values: IntArray, numbersCountToCountSum: Int): Int? {
+        if (values.size < numbersCountToCountSum) {
             return null
         }
 

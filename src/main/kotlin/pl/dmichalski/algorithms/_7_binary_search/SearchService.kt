@@ -5,11 +5,7 @@ internal class SearchService {
     /**
      * O(n) time complexity
      */
-    fun search(sortedValues: IntArray?, numberToSearch: Int): Int {
-        if (sortedValues == null) {
-            return -1
-        }
-
+    fun search(sortedValues: IntArray, numberToSearch: Int): Int {
         for (i in sortedValues.indices) {
             if (sortedValues[i] == numberToSearch) {
                 return i

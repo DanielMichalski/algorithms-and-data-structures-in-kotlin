@@ -17,7 +17,6 @@ class CountUniqueValuesServiceSpec extends Specification {
 
         where:
         numbers                              | expectedResult
-        null                                 | 0
         []                                   | 0
         [0]                                  | 1
         [1, 1, 1]                            | 1

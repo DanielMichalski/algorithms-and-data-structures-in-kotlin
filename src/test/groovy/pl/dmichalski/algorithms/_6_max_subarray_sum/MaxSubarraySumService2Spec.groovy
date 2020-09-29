@@ -17,7 +17,6 @@ class MaxSubarraySumService2Spec extends Specification {
 
         where:
         numbers               | numbersCountToCountSum | expectedResult
-        null                  | 1                      | null
         []                    | 1                      | null
         [1]                   | 2                      | null
         [1, 2, 5, 2, 8, 1, 5] | 2                      | 10

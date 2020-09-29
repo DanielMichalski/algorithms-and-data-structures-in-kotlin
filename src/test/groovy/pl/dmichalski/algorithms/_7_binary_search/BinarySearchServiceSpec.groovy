@@ -17,7 +17,6 @@ class BinarySearchServiceSpec extends Specification {
 
         where:
         numbers            | numberToSearch | expectedResult
-        null               | 1              | -1
         []                 | 1              | -1
         [1]                | 1              | 0
         [1, 2, 3, 4, 5, 6] | 4              | 3

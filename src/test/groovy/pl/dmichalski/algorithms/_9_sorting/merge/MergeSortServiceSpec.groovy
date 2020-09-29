@@ -17,7 +17,6 @@ class MergeSortServiceSpec extends Specification {
 
         where:
         values                                 | expectedResult
-        null                                   | null
         []                                     | []
         [1]                                    | [1]
         [1, 2]                                 | [1, 2]

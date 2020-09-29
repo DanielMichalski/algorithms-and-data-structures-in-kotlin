@@ -5,8 +5,8 @@ internal class CountUniqueValuesService {
     /**
      * O(n) time complexity
      */
-    fun countUniqueValues(values: IntArray?): Int {
-        if (values == null || values.isEmpty()) {
+    fun countUniqueValues(values: IntArray): Int {
+        if (values.isEmpty()) {
             return 0
         }
         var i = 0

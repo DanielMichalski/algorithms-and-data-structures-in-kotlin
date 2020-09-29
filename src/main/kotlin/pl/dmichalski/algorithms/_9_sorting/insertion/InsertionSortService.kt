@@ -6,10 +6,7 @@ internal class InsertionSortService {
      * O(n2) time complexity
      * O(1) space complexity
      */
-    fun sort(values: IntArray?): IntArray? {
-        if (values == null) {
-            return null
-        }
+    fun sort(values: IntArray): IntArray {
         for (i in 1 until values.size) {
             val currentVal = values[i]
             var j: Int = i - 1

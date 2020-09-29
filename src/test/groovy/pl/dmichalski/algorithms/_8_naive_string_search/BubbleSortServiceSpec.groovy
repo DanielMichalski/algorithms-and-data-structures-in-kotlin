@@ -17,9 +17,6 @@ class BubbleSortServiceSpec extends Specification {
 
         where:
         text                           | searchingText | expectedResult
-        null                           | null          | -1
-        'ala'                          | null          | -1
-        null                           | 'ala'         | -1
         ''                             | 'ala'         | 0
         'ala ma kota'                  | 'mak'         | 0
         'ala ma kota'                  | 'ma'          | 1

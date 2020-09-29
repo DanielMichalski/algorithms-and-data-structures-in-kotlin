@@ -5,11 +5,7 @@ class SelectionSortService {
     /**
      * O(n2) time complexity
      */
-    fun sort(values: IntArray?): IntArray? {
-        if (values == null) {
-            return null
-        }
-
+    fun sort(values: IntArray): IntArray {
         val n = values.size
         for (i in 0 until n) {
             var lowestIndex = i

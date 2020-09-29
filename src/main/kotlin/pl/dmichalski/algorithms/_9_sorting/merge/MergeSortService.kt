@@ -1,28 +1,23 @@
 package pl.dmichalski.algorithms._9_sorting.merge
 
-import java.util.Arrays.copyOfRange
-
 internal class MergeSortService {
 
     /**
      * O(n log n) time complexity
      * O(n) space complexity
      */
-    fun sort(values: IntArray?): IntArray? {
-        if (values == null) {
-            return null
-        }
+    fun sort(values: IntArray): IntArray {
         if (values.size <= 1) {
             return values
         }
         val midPoint = values.size / 2
-        val left = sort(copyOfRange(values, 0, midPoint))
-        val right = sort(copyOfRange(values, midPoint, values.size))
+        val left = sort(values.copyOfRange(0, midPoint))
+        val right = sort(values.copyOfRange(midPoint, values.size))
         return merge(left, right)
     }
 
-    private fun merge(array1: IntArray?, array2: IntArray?): IntArray {
-        val result = IntArray(array1!!.size + array2!!.size)
+    private fun merge(array1: IntArray, array2: IntArray): IntArray {
+        val result = IntArray(array1.size + array2.size)
         var array1Index = 0
         var array2Index = 0
         var index = 0
