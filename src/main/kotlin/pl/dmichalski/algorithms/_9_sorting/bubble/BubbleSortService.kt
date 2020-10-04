@@ -2,12 +2,14 @@ package pl.dmichalski.algorithms._9_sorting.bubble
 
 import pl.dmichalski.algorithms._9_sorting.SortService
 
+/**
+ * Bubble sort algorithm.
+ *
+ * O(n2) time complexity
+ * O(1) space complexity
+ */
 internal class BubbleSortService : SortService {
 
-    /**
-     * O(n2) time complexity
-     * O(1) space complexity
-     */
     override fun sort(values: IntArray): IntArray {
         val n = values.size
         for (i in 0 until n - 1) {

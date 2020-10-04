@@ -2,12 +2,14 @@ package pl.dmichalski.algorithms._9_sorting.merge
 
 import pl.dmichalski.algorithms._9_sorting.SortService
 
+/**
+ * Merge sort algorithm.
+ *
+ * O(n log n) time complexity
+ * O(n) space complexity
+ */
 internal class MergeSortService : SortService {
 
-    /**
-     * O(n log n) time complexity
-     * O(n) space complexity
-     */
     override fun sort(values: IntArray): IntArray {
         if (values.size <= 1) {
             return values
