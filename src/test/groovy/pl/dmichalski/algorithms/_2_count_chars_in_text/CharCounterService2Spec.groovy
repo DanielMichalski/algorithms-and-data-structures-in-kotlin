@@ -5,7 +5,7 @@ import spock.lang.Unroll
 
 class CharCounterService2Spec extends Specification {
 
-    private CharCounterService2 underTest = new CharCounterService2()
+    private final CharCounterService2 underTest = new CharCounterService2()
 
     @Unroll
     def 'should return [expectedResult=#expectedResult] for [text=#text]'() {

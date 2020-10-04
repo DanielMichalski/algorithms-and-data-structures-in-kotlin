@@ -5,7 +5,7 @@ import spock.lang.Unroll
 
 class BubbleSortServiceSpec extends Specification {
 
-    private StringSearchService underTest = new StringSearchService()
+    private final StringSearchService underTest = new StringSearchService()
 
     @Unroll
     def 'should return [expectedResult=#expectedResult] for [text=#text] and [searchingText=#searchingText]'() {

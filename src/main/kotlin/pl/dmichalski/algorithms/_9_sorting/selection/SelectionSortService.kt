@@ -1,11 +1,14 @@
 package pl.dmichalski.algorithms._9_sorting.selection
 
-class SelectionSortService {
+import pl.dmichalski.algorithms._9_sorting.SortService
+
+class SelectionSortService : SortService {
 
     /**
      * O(n2) time complexity
+     * O(1) space complexity
      */
-    fun sort(values: IntArray): IntArray {
+    override fun sort(values: IntArray): IntArray {
         val n = values.size
         for (i in 0 until n) {
             var lowestIndex = i

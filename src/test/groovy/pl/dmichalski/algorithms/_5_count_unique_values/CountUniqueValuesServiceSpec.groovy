@@ -5,7 +5,7 @@ import spock.lang.Unroll
 
 class CountUniqueValuesServiceSpec extends Specification {
 
-    private CountUniqueValuesService underTest = new CountUniqueValuesService()
+    private final CountUniqueValuesService underTest = new CountUniqueValuesService()
 
     @Unroll
     def 'should return [expectedResult=#expectedResult] for [numbers=#numbers]'() {

@@ -5,7 +5,7 @@ import spock.lang.Unroll
 
 class AnagramService2Spec extends Specification {
 
-    private AnagramService2 underTest = new AnagramService2()
+    private final AnagramService2 underTest = new AnagramService2()
 
     @Unroll
     def 'should return [expectedResult=#expectedResult] for [text1=#text1 and text2=#text2]'() {

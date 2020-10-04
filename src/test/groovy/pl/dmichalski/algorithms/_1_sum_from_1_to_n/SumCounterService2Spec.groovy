@@ -5,7 +5,7 @@ import spock.lang.Unroll
 
 class SumCounterService2Spec extends Specification {
 
-    private SumCounterService2 underTest = new SumCounterService2()
+    private final SumCounterService2 underTest = new SumCounterService2()
 
     @Unroll
     def 'should return (expectedResult=#expectedResult) for (n=#n)'() {

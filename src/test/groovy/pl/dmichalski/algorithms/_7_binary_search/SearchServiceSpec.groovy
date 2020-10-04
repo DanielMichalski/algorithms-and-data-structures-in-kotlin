@@ -5,7 +5,7 @@ import spock.lang.Unroll
 
 class SearchServiceSpec extends Specification {
 
-    private SearchService underTest = new SearchService()
+    private final SearchService underTest = new SearchService()
 
     @Unroll
     def 'should return [expectedResult=#expectedResult] for [numbers=#numbers]'() {

@@ -1,12 +1,14 @@
 package pl.dmichalski.algorithms._9_sorting.insertion
 
-internal class InsertionSortService {
+import pl.dmichalski.algorithms._9_sorting.SortService
+
+internal class InsertionSortService : SortService {
 
     /**
      * O(n2) time complexity
      * O(1) space complexity
      */
-    fun sort(values: IntArray): IntArray {
+    override fun sort(values: IntArray): IntArray {
         for (i in 1 until values.size) {
             val currentVal = values[i]
             var j: Int = i - 1

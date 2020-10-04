@@ -5,7 +5,7 @@ import spock.lang.Unroll
 
 class MaxSubarraySumService2Spec extends Specification {
 
-    private MaxSubarraySumService2 underTest = new MaxSubarraySumService2()
+    private final MaxSubarraySumService2 underTest = new MaxSubarraySumService2()
 
     @Unroll
     def 'should return [expectedResult=#expectedResult] for [numbers=#numbers]'() {

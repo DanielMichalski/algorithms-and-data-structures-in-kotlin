@@ -1,11 +1,14 @@
 package pl.dmichalski.algorithms._9_sorting.bubble
 
-internal class BubbleSortOptimizedService {
+import pl.dmichalski.algorithms._9_sorting.SortService
+
+internal class BubbleSortOptimizedService : SortService {
 
     /**
      * O(n2) time complexity
+     * O(1) space complexity
      */
-    fun sort(values: IntArray): IntArray? {
+    override fun sort(values: IntArray): IntArray {
         val n = values.size
         for (i in 0 until n - 1) {
             var noSwaps = true

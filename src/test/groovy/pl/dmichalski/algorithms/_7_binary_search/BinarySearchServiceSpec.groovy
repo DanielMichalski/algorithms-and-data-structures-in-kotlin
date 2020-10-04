@@ -5,7 +5,7 @@ import spock.lang.Unroll
 
 class BinarySearchServiceSpec extends Specification {
 
-    private BinarySearchService underTest = new BinarySearchService()
+    private final BinarySearchService underTest = new BinarySearchService()
 
     @Unroll
     def 'should return [expectedResult=#expectedResult] for [numbers=#numbers]'() {
