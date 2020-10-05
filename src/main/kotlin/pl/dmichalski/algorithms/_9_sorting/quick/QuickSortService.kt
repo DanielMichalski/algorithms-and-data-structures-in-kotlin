@@ -1,18 +1,25 @@
 package pl.dmichalski.algorithms._9_sorting.quick
 
+import pl.dmichalski.algorithms._9_sorting.SortService
+
 /**
  * Quick sort algorithm.
  *
  * O(n2) time complexity
  * O(n log n) space complexity
  */
-internal class QuickSortService {
+internal class QuickSortService : SortService {
 
-    fun sort(values: IntArray, left: Int? = 0, right: Int? = values.size): IntArray {
+    override fun sort(values: IntArray): IntArray {
+        sortArray(values)
+        return values
+    }
+
+    private fun sortArray(values: IntArray, left: Int? = 0, right: Int? = values.size): IntArray {
         if (left!! < right!!) {
             val pivotIndex = pivot(values, left, right)
-            sort(values, left, pivotIndex)
-            sort(values, pivotIndex + 1, right)
+            sortArray(values, left, pivotIndex)
+            sortArray(values, pivotIndex + 1, right)
         }
         return values
     }

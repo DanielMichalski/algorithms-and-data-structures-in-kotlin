@@ -16,7 +16,7 @@
 		<groovy-all.version>2.4.11</groovy-all.version>
 		<maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
 		<gmavenplus-plugin.version>1.10.0</gmavenplus-plugin.version>
-		<kotlin-maven-plugin.jvmTarget>11</kotlin-maven-plugin.jvmTarget>
+		<kotlin-maven-plugin.jvmTarget>1.8</kotlin-maven-plugin.jvmTarget>
 	</properties>
 
 	<dependencies>
@@ -69,6 +69,7 @@
 					</execution>
 				</executions>
 			</plugin>
+
 			<plugin>
 				<groupId>org.jetbrains.kotlin</groupId>
 				<artifactId>kotlin-maven-plugin</artifactId>
