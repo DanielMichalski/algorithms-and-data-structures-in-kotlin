@@ -11,16 +11,17 @@ import pl.dmichalski.algorithms._9_sorting.SortService
 internal class InsertionSortService : SortService {
 
     override fun sort(values: IntArray): IntArray {
-        for (i in 1 until values.size) {
-            val currentVal = values[i]
+        val valuesCopy = values.copyOf()
+        for (i in 1 until valuesCopy.size) {
+            val currentVal = valuesCopy[i]
             var j: Int = i - 1
-            while (j >= 0 && values[j] > currentVal) {
-                values[j + 1] = values[j]
+            while (j >= 0 && valuesCopy[j] > currentVal) {
+                valuesCopy[j + 1] = valuesCopy[j]
                 j--
             }
-            values[j + 1] = currentVal
+            valuesCopy[j + 1] = currentVal
         }
-        return values
+        return valuesCopy
     }
 
 }

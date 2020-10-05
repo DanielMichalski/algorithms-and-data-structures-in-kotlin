@@ -11,37 +11,38 @@ import pl.dmichalski.algorithms._9_sorting.SortService
 internal class QuickSortService : SortService {
 
     override fun sort(values: IntArray): IntArray {
-        sortArray(values)
-        return values
+        val valuesCopy = values.copyOf()
+        sortArray(valuesCopy)
+        return valuesCopy
     }
 
-    private fun sortArray(values: IntArray, left: Int? = 0, right: Int? = values.size): IntArray {
+    private fun sortArray(valuesCopy: IntArray, left: Int? = 0, right: Int? = valuesCopy.size): IntArray {
         if (left!! < right!!) {
-            val pivotIndex = pivot(values, left, right)
-            sortArray(values, left, pivotIndex)
-            sortArray(values, pivotIndex + 1, right)
+            val pivotIndex = pivot(valuesCopy, left, right)
+            sortArray(valuesCopy, left, pivotIndex)
+            sortArray(valuesCopy, pivotIndex + 1, right)
         }
-        return values
+        return valuesCopy
     }
 
-    private fun pivot(values: IntArray, start: Int, end: Int): Int {
-        val pivot = values[start]
+    private fun pivot(valuesCopy: IntArray, start: Int, end: Int): Int {
+        val pivot = valuesCopy[start]
         var swapIndex = start
 
         for (i in start + 1 until end) {
-            if (pivot > values[i]) {
+            if (pivot > valuesCopy[i]) {
                 swapIndex++
-                swap(values, swapIndex, i)
+                swap(valuesCopy, swapIndex, i)
             }
         }
-        swap(values, start, swapIndex)
+        swap(valuesCopy, start, swapIndex)
         return swapIndex
     }
 
-    private fun swap(values: IntArray, x: Int, y: Int) {
-        val temp = values[x]
-        values[x] = values[y]
-        values[y] = temp
+    private fun swap(valuesCopy: IntArray, x: Int, y: Int) {
+        val temp = valuesCopy[x]
+        valuesCopy[x] = valuesCopy[y]
+        valuesCopy[y] = temp
     }
 
 }

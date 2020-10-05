@@ -11,12 +11,13 @@ import pl.dmichalski.algorithms._9_sorting.SortService
 internal class MergeSortService : SortService {
 
     override fun sort(values: IntArray): IntArray {
-        if (values.size <= 1) {
-            return values
+        val valuesCopy = values.copyOf()
+        if (valuesCopy.size <= 1) {
+            return valuesCopy
         }
-        val midPoint = values.size / 2
-        val left = sort(values.copyOfRange(0, midPoint))
-        val right = sort(values.copyOfRange(midPoint, values.size))
+        val midPoint = valuesCopy.size / 2
+        val left = sort(valuesCopy.copyOfRange(0, midPoint))
+        val right = sort(valuesCopy.copyOfRange(midPoint, valuesCopy.size))
         return merge(left, right)
     }
 

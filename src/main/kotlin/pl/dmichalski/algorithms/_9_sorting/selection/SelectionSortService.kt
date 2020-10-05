@@ -11,22 +11,23 @@ import pl.dmichalski.algorithms._9_sorting.SortService
 class SelectionSortService : SortService {
 
     override fun sort(values: IntArray): IntArray {
-        val n = values.size
+        val valuesCopy = values.copyOf()
+        val n = valuesCopy.size
         for (i in 0 until n) {
             var lowestIndex = i
             for (j in i + 1 until n) {
-                if (values[j] < values[lowestIndex]) {
+                if (valuesCopy[j] < valuesCopy[lowestIndex]) {
                     lowestIndex = j
                 }
             }
             if (lowestIndex != i) {
-                val temp = values[i]
-                values[i] = values[lowestIndex]
-                values[lowestIndex] = temp
+                val temp = valuesCopy[i]
+                valuesCopy[i] = valuesCopy[lowestIndex]
+                valuesCopy[lowestIndex] = temp
             }
         }
 
-        return values
+        return valuesCopy
     }
 
 }
