@@ -1,11 +1,11 @@
-package pl.dmichalski.algorithms._9_sorting.quick
+package pl.dmichalski.algorithms._9_sorting.radix
 
 import pl.dmichalski.algorithms._9_sorting.BaseSortServiceSpec
 
 class RadixSortServiceSpec extends BaseSortServiceSpec {
 
     void setup() {
-        super.setUnderTest(new QuickSortService())
+        super.setUnderTest(new RadixSortService())
     }
 
 }
