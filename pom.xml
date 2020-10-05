@@ -5,9 +5,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>pl.dmichalski</groupId>
-	<artifactId>algorithms-and-data-structures</artifactId>
+	<artifactId>algorithms-and-data-structures-in-kotlin</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<name>Algorithms and data structure</name>
+	<name>Algorithms and data structures in Kotlin</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
