@@ -6,7 +6,7 @@ import pl.dmichalski.algorithms._9_sorting.SortService
  * Quick sort algorithm.
  *
  * O(n2) time complexity
- * O(n log n) space complexity
+ * O(log n) space complexity
  */
 internal class QuickSortService : SortService {
 
