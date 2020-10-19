@@ -72,6 +72,98 @@ class SinglyLinkedList {
         length++
     }
 
+    fun get(index: Int): Node? {
+        if (index < 0 || index >= length) {
+            return null
+        }
+
+        var currentIndex = 0
+        var current = head
+
+        while (currentIndex != index) {
+            current = current!!.getNext()
+            currentIndex++
+        }
+
+        return current
+    }
+
+    fun set(value: String, index: Int): Boolean {
+        val node = get(index)
+        return if (node != null) {
+            node.setValue(value)
+            true
+        } else {
+            false
+        }
+    }
+
+    fun insert(value: String, index: Int): Boolean {
+        if (index < 0 || index > length) {
+            return false
+        }
+
+        if (index == 0) {
+            this.unshift(value)
+            return true
+        }
+
+        if (index == length) {
+            this.push(value)
+            return true
+        }
+
+        val previous = this.get(index - 1)
+
+        val newNode = Node(value)
+        newNode.setNext(previous!!.getNext())
+        previous.setNext(newNode)
+        length++
+        return true
+    }
+
+    fun remove(index: Int): Node? {
+        if (index < 0 || index >= length) {
+            return null
+        }
+
+        if (index == 0) {
+            val firstElement = head
+            shift()
+            return firstElement
+        }
+
+        if (index == length - 1) {
+            val lastElement = tail
+            pop()
+            return lastElement
+        }
+
+        val previous = get(index - 1)
+        val elementToRemove = previous!!.getNext()
+        previous.setNext(elementToRemove!!.getNext())
+        length--
+        return elementToRemove
+    }
+
+    fun reverse(): SinglyLinkedList {
+        var currentNode = this.head
+        this.head = this.tail
+        this.tail = currentNode
+
+        var previous: Node? = null
+        var nextNode: Node?
+
+        for (i in 0 until length) {
+            nextNode = currentNode?.getNext()
+            currentNode!!.setNext(previous)
+            previous = currentNode
+            currentNode = nextNode
+        }
+
+        return this
+    }
+
     fun getHead(): Node? {
         return head
     }
@@ -84,4 +176,9 @@ class SinglyLinkedList {
         return length
     }
 
+    override fun toString(): String {
+        return "Head: $head\n" +
+                "Tail: $tail\n" +
+                "Length: $length\n"
+    }
 }
