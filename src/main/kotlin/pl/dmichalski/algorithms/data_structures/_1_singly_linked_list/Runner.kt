@@ -31,7 +31,7 @@ object Runner {
         println("------------------ Getting the last element ------------------")
         singlyLinkedList = getSinglyLinkedLit()
         val lastElement = singlyLinkedList.get(singlyLinkedList.getLength() - 1)
-        println("lastElement = ${lastElement}")
+        println("lastElement = $lastElement")
 
         println("\n------------------ Setting new first element ------------------ ")
         singlyLinkedList = getSinglyLinkedLit()
@@ -60,7 +60,7 @@ object Runner {
         singlyLinkedList.push("first")
         singlyLinkedList.push("second")
 
-        return singlyLinkedList;
+        return singlyLinkedList
     }
 
     private fun printList(singlyLinkedList: SinglyLinkedList) {
