@@ -31,7 +31,7 @@ object Runner {
         println("------------------ Getting the last element ------------------")
         doublyLinkedList = getDoublyLinkedLit()
         val lastElement = doublyLinkedList.get(doublyLinkedList.getLength() - 1)
-        println("lastElement = ${lastElement}")
+        println("lastElement = $lastElement")
 
         println("\n------------------ Setting new first element ------------------ ")
         doublyLinkedList = getDoublyLinkedLit()
