@@ -16,13 +16,13 @@ object Runner {
     /**
      * It returns BST like this:
      * <pre>
-     *        4
-     *      /   \
-     *     2     7
-     *   /     /  \
-     *  1    6    20
-     *              \
-     *               23
+     *          4
+     *        /   \
+     *       2     7
+     *     /     /  \
+     *    1    6    20
+     *                \
+     *                 23
      * </pre>
      */
     private fun getBinarySearchTree(): BinarySearchTree {

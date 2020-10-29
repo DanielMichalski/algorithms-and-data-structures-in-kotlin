@@ -18,11 +18,24 @@ object Runner {
         println("Number $searchingNumber2 exists = $exists2")
     }
 
+    /**
+     * It returns BST like this:
+     * <pre>
+     *        4
+     *      /   \
+     *     2     6
+     *    /     / \
+     *   1     5   7
+     * </pre>
+     */
     private fun getBinarySearchTree(): BinarySearchTree {
         val binarySearchTree = BinarySearchTree()
 
         binarySearchTree.insert(4)
         binarySearchTree.insert(2)
+        binarySearchTree.insert(1)
+        binarySearchTree.insert(6)
+        binarySearchTree.insert(5)
         binarySearchTree.insert(7)
 
         return binarySearchTree
