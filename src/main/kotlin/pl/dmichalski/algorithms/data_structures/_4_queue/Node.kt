@@ -28,5 +28,4 @@ class Node(private var value: String) {
         return "Node(value='$value', next=$next)"
     }
 
-
 }
