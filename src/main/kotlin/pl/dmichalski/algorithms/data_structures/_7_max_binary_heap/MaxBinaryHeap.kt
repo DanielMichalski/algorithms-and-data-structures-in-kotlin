@@ -1,7 +1,5 @@
 package pl.dmichalski.algorithms.data_structures._7_max_binary_heap
 
-import java.lang.IllegalStateException
-
 class MaxBinaryHeap {
 
     private var values: MutableList<Int> = mutableListOf()
@@ -18,7 +16,7 @@ class MaxBinaryHeap {
 
         val max = values[0]
         val end = values.removeLast()
-        if(values.size > 1) {
+        if (values.size > 1) {
             values[0] = end
             sinkDown()
         }
@@ -53,18 +51,18 @@ class MaxBinaryHeap {
         var leftChild: Int? = null
         var rightChild: Int?
 
-        while(true) {
+        while (true) {
             var swapIdx: Int? = null
             val leftChildIdx = 2 * parentIndex + 1
             val rightChildIdx = 2 * parentIndex + 2
 
-            if(leftChildIdx < length) {
+            if (leftChildIdx < length) {
                 leftChild = values[leftChildIdx]
                 if (leftChild > parent) {
                     swapIdx = leftChildIdx
                 }
             }
-            if(rightChildIdx < length) {
+            if (rightChildIdx < length) {
                 rightChild = values[rightChildIdx]
                 if ((swapIdx == null && rightChild > parent) || (swapIdx != null && rightChild > leftChild!!)) {
                     swapIdx = rightChildIdx

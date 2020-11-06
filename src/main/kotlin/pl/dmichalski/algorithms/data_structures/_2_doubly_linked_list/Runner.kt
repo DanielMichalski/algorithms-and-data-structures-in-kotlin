@@ -55,7 +55,7 @@ object Runner {
         doublyLinkedList.push("first")
         doublyLinkedList.push("second")
 
-        return doublyLinkedList;
+        return doublyLinkedList
     }
 
     private fun printList(doublyLinkedList: DoublyLinkedList) {

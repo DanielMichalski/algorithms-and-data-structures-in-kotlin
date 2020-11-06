@@ -1,7 +1,5 @@
 package pl.dmichalski.algorithms.data_structures._8_priority_queue
 
-import java.lang.IllegalStateException
-
 class PriorityQueue {
 
     private var values: MutableList<Node> = mutableListOf()
@@ -25,7 +23,7 @@ class PriorityQueue {
 
         val min = values[0]
         val end = values.removeLast()
-        if(values.size > 1) {
+        if (values.size > 1) {
             values[0] = end
             sinkDown()
         }
@@ -60,18 +58,18 @@ class PriorityQueue {
         var leftChild: Node? = null
         var rightChild: Node?
 
-        while(true) {
+        while (true) {
             var swapIdx: Int? = null
             val leftChildIdx = 2 * parentIndex + 1
             val rightChildIdx = 2 * parentIndex + 2
 
-            if(leftChildIdx < length) {
+            if (leftChildIdx < length) {
                 leftChild = values[leftChildIdx]
                 if (leftChild.getPriority() < parent.getPriority()) {
                     swapIdx = leftChildIdx
                 }
             }
-            if(rightChildIdx < length) {
+            if (rightChildIdx < length) {
                 rightChild = values[rightChildIdx]
                 if ((swapIdx == null && rightChild.getPriority() < parent.getPriority()) || (swapIdx != null && rightChild.getPriority() < leftChild!!.getPriority())) {
                     swapIdx = rightChildIdx

@@ -184,8 +184,8 @@ class DoublyLinkedList {
     }
 
     override fun toString(): String {
-        return "Head: $head\n" +
-                "Tail: $tail\n" +
-                "Length: $length\n"
+        return "Head: ${getHead()}\n" +
+                "Tail: ${getTail()}\n" +
+                "Length: ${getLength()}\n"
     }
 }
