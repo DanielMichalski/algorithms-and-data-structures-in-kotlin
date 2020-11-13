@@ -26,6 +26,14 @@ object Runner {
         depthFirstSearch = undirectedGraph.depthFirstSearchIterative(VERTEX_A)
         println("Graph elements: $depthFirstSearch")
         printUndirectedGraph(undirectedGraph)
+
+        println("------------------ Breadth First Search traversal ------------------ ")
+        undirectedGraph = getUndirectedGraph()
+        val breadthFirstSearch = undirectedGraph.breadthFirstSearch(VERTEX_A)
+        println("Graph elements: $breadthFirstSearch")
+        printUndirectedGraph(undirectedGraph)
+
+
     }
 
     /**

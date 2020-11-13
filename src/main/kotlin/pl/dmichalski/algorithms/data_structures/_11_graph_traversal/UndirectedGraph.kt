@@ -39,8 +39,11 @@ class UndirectedGraph {
             result.add(node)
             node.getConnections()
                     .map { con -> findNode(con) }
-                    .filter { neighbour -> !visited.contains(neighbour!!.getVertex()) }
-                    .forEach { neighbour -> dfs(neighbour) }
+                    .forEach { neighbour ->
+                        if (!visited.contains(neighbour?.getVertex())) {
+                            dfs(neighbour)
+                        }
+                    }
         }
 
         dfs(node)
@@ -71,6 +74,32 @@ class UndirectedGraph {
 
         return result
     }
+
+
+    fun breadthFirstSearch(vertex: String): MutableList<Node> {
+        val queue = ArrayDeque<Node>()
+        queue.push(findNode(vertex)!!)
+        val result: MutableList<Node> = ArrayList()
+        val visited: MutableSet<String> = HashSet()
+        var currentVertex: Node?
+
+        visited.add(vertex)
+        while (queue.size > 0) {
+            currentVertex = queue.pop()
+            result.add(currentVertex)
+
+            currentVertex.getConnections()
+                    .map { con -> findNode(con) }
+                    .filter { neighbour -> !visited.contains(neighbour!!.getVertex()) }
+                    .forEach { neighbour ->
+                        visited.add(neighbour!!.getVertex())
+                        queue.add(neighbour)
+                    }
+        }
+
+        return result
+    }
+
 
     override fun toString(): String {
         return "UndirectedGraph(adjacencyList='$adjacencyList')\n"
