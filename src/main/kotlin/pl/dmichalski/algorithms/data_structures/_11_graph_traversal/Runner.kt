@@ -32,8 +32,6 @@ object Runner {
         val breadthFirstSearch = undirectedGraph.breadthFirstSearch(VERTEX_A)
         println("Graph elements: $breadthFirstSearch")
         printUndirectedGraph(undirectedGraph)
-
-
     }
 
     /**
