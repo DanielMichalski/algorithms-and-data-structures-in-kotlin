@@ -24,17 +24,21 @@ object Runner {
     /**
      * It returns weighted graph like this:
      * <pre>
-     *               4
-     *          A --------- B
-     *      2  /            |
-     *       /   2          |
-     *      C ------- D     | 3
-     *       \       / \    |
-     *      4 \   1 /   \ 3 |
-     *         \   /     \  |
-     *          F --------- E
-     *                1
      *
+     *                 4
+     *           A ---------- B
+     *          /             |
+     *       2 /              |
+     *        /               |
+     *       /    2           |
+     *      C -------- D      | 3
+     *       \        / \     |
+     *        \      /   \    |
+     *       4 \  1 /   3 \   |
+     *          \  /       \  |
+     *           \/         \ |
+     *            F --------- E
+     *                  1
      * </pre>
      */
     private fun getWeightedGraph(): WeightedGraph {
