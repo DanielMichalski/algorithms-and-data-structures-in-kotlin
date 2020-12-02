@@ -4,7 +4,7 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>pl.dmichalski</groupId>
+	<groupId>com.danielmichalski</groupId>
 	<artifactId>algorithms-and-data-structures-in-kotlin</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<name>Algorithms and data structures in Kotlin</name>
