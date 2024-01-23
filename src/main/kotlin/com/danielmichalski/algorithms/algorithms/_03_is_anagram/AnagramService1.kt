@@ -6,7 +6,7 @@ internal class AnagramService1 {
      * O(n log n) time complexity
      */
     fun areAnagrams(text1: String, text2: String): Boolean {
-        if (text1.isEmpty() || text2.isEmpty() || text1.length != text2.length) {
+        if (text1.isBlank() || text2.isBlank() || text1.length != text2.length) {
             return false
         }
         val text1LowerCase = text1.toLowerCase()
