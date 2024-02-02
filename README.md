@@ -5,7 +5,8 @@ Algorithms and data structures in Kotlin
 
 This project is written in Kotlin and Groovy and aims to present solutions with time and memory complexity for some famous algorithms.
 
-## Table of Contents
+## Documentation
+The documentation is divided into several sections:
 * [Building the application](#building-the-application)
 * [Running tests](#running-tests)
 
